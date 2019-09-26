@@ -56,6 +56,8 @@ app.use('/', index);
 const movies = require('./routes/movies');
 app.use('/', movies)
 
+const singleMovie=require('./routes/singleMovie');
+app.use('/',singleMovie)
 
 app.listen(3000,()=>{
   console.log("This Server is running Oh booy")
