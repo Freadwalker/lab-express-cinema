@@ -5,7 +5,7 @@
 
 <a href="/movies">Go back</a>
 <h1 class="singleMovieTitle">{{movie.title}}</h1>
-<h2>Director: {{movie.director}}</h2>
+<h2>Director: {{movie.director.firstName}} {{movie.director.lastName}}</h2>
 <h2>Stars</h2>
 <ul>
         {{#each movie.stars}}

@@ -13,7 +13,7 @@ const mongoose= require('mongoose');
 
 const movie= mongoose.model('movies', {
     title:String,
-    director: String,
+    director: {type:mongoose.Types.ObjectId, ref:"directors"},
     stars: Array,
     image:String,
     description:String,

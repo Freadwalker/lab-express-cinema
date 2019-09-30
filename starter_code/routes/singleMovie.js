@@ -9,7 +9,7 @@ router.get('/movie/:id', (req, res, next) => {
         res.render("singleMovie",{movie})
     })
     .catch((err)=>{
-        console.log(err)
+            console.log(err)
     })
   });
 

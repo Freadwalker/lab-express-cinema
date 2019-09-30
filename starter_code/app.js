@@ -59,6 +59,12 @@ app.use('/', movies)
 const singleMovie=require('./routes/singleMovie');
 app.use('/',singleMovie)
 
+const createMovie=require('./routes/create-movie')
+app.use('/',createMovie)
+
+const createDirector=require('./routes/create-director')
+app.use('/',createDirector);
+
 app.listen(3000,()=>{
   console.log("This Server is running Oh booy")
 })

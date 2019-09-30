@@ -1,0 +1,26 @@
+<div class="createMovieWrapper">
+    <h1>Create your own Movie</h1>
+
+
+    <form action="/create-movie" method="POST">
+
+        <input name="movieTitle" placeholder="title" class="input">
+        {{!-- <input name="movieDirector" placeholder="director" class="input"> --}}
+        <select class="select" placeholder="director">
+
+            {{#each director}}
+
+            <option name ="movieDirector" value="{{_id}}">{{firstName}} {{lastName}}</option>
+
+            {{/each}}
+
+        </select>
+
+        <input name="movieDescription" placeholder="description" class="input">
+        <input name="movieImage" placeholder="imgUrl" class="input">
+
+        <button type="submit" class="submit-button">CREATE</button>
+
+
+    </form>
+</div>
